@@ -1,0 +1,11 @@
+1. The ECG segment was taken from MIT-BIH Arrhythmia Database, record 100, and sampled at the documented sampling frequency.
+2. The dominant heart-rate frequency peak was 1.233 Hz, corresponding to 74.0 BPM.
+3. The time-domain R-R interval method gave 74.0 BPM, so the percentage difference was 0.04%.
+4. The P-wave and T-wave components are expected mainly in the lower ECG band around 0.5-10 Hz; after excluding the heart-rate fundamental, the measured low-band peak was 4.93 Hz.
+5. The QRS complex has sharper transitions, so its higher-frequency energy was summarized in the 10-40 Hz band; the measured QRS high-frequency peak was 10.07 Hz.
+6. The baseline-wander power below 0.5 Hz was reduced after preprocessing from 7.47e-05 to 4.434e-06.
+7. The 50 Hz mains region was checked to identify possible power-line interference.
+8. The computed SNR estimate after filtering was 17.03 dB, based on signal-band power versus noise-band power.
+9. Small differences between RR-based BPM and FFT-based BPM can occur because the FFT uses a finite window and its frequency resolution depends on the segment length.
+10. Overall, the frequency-domain result supports the time-domain heart-rate estimate and helps verify the ECG signal quality.
+

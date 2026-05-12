@@ -1,0 +1,9 @@
+Stream C clinical impact analysis:
+1. Multi-lead ECG diagnosis depends on comparing timing and shape across different leads.
+2. If filtering delays one lead differently from another, the ECG may look clean but become system-level incorrect.
+3. The selected PTB record is a myocardial-infarction case, so preserving inter-lead timing is clinically important.
+4. Phase distortion can shift QRS onset or ST-segment timing and may confuse morphology-based interpretation.
+5. The causal IIR pipeline changed selected cross-lead correlation lags by as much as 55.00 ms.
+6. Same-lead processing delay after zero-phase filtering was 0.00 ms, showing timing preservation relative to the raw lead.
+7. This shows why magnitude-only filter design is not enough for multi-channel biomedical systems.
+8. For multi-lead ECG, group delay consistency must be verified along with noise reduction.

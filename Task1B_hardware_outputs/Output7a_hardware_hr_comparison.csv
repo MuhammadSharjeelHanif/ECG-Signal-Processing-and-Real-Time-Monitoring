@@ -1,0 +1,3 @@
+Method,Input_Used,Formula,Heart_Rate_BPM,Frequency_Hz,Difference_from_RR_percent
+RR intervals,Median RR interval from 33 detected R-peaks,HR = 60 / median(RR),80.42895442,NaN,0
+Frequency-domain FFT,Dominant HR peak = 1.320 Hz,HR = dominant frequency x 60,79.2,1.32,1.528

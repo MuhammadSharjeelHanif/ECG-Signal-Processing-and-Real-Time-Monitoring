@@ -1,0 +1,11 @@
+1. The ECG segment was acquired from Hardware ESP32 + AD8232 and loaded from the saved file ECG_FFT_Window_20260505_191846.mat.
+2. The hardware ECG window was sampled at approximately 250.00 Hz for 25.00 s, which provides the frequency resolution needed for the FFT plot.
+3. The dominant heart-rate frequency peak was 1.320 Hz, corresponding to 79.2 BPM.
+4. The time-domain R-R interval method gave 80.4 BPM, so the percentage difference was 1.53%.
+5. The low-frequency region below 0.5 Hz represents baseline wander caused by motion, respiration, or electrode contact changes.
+6. The P-wave and T-wave components are slower ECG components and are mainly expected in the 0.5-10 Hz region; after excluding the heart-rate fundamental, the measured low-band peak was 5.44 Hz.
+7. The QRS complex contains sharper transitions, so its higher-frequency energy was summarized in the 10-40 Hz band; the measured QRS high-frequency peak was 10.72 Hz.
+8. The 50 Hz mains region was checked to identify possible power-line interference from the acquisition setup.
+9. The computed SNR estimate after filtering was 27.92 dB, based on signal-band power versus noise-band power.
+10. Overall, agreement between RR-based BPM and FFT-based BPM supports the quality of the hardware ECG recording and peak detection.
+

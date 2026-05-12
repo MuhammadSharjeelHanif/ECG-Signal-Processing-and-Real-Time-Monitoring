@@ -1,0 +1,2 @@
+Source,Record_ID_or_File,Sampling_Rate_Hz,Segment_Duration_s,Patient_Name,Age,Gender_or_Notes,Signal_Type,Local_File
+Hardware ESP32 + AD8232,ECG_FFT_Window_20260505_191846.mat,250,25,Sharjeel,21,Male,Real-time hardware ECG FFT window,D:\NUST\6th Sem\DSP\Proj\ecg_project_codes\ECG_FFT_Window_20260505_191846.mat

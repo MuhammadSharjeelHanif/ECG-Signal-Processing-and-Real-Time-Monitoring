@@ -1,0 +1,11 @@
+Stream A justification:
+1. A high-pass cutoff of 0.5 Hz was selected because baseline wander from breathing and electrode drift is mainly below 0.5 Hz.
+2. A 50 Hz notch filter was selected because local mains interference appears around 50 Hz.
+3. A 40 Hz low-pass cutoff was selected because most diagnostic QRS energy is inside the 1-40 Hz ECG band for this project.
+4. IIR Butterworth filters were used in the live dashboard because they need low order and are computationally light.
+5. Zero-phase filtfilt processing was used offline/near-real-time to reduce phase distortion.
+6. FIR filters were also plotted for comparison because FIR filters can provide nearly linear phase.
+7. The FIR filters need a much higher order than IIR filters for the same transition sharpness.
+8. Group delay plots show whether the filter delay is constant or frequency-dependent.
+9. Frequency-dependent delay can distort ECG morphology such as QRS width and ST-segment timing.
+10. The combined pipeline improved estimated SNR from 13.89 dB to 32.16 dB, an improvement of 18.27 dB.

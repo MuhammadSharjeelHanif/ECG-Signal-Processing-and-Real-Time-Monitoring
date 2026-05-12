@@ -1,0 +1,5 @@
+Lead_A,Lead_B,Raw_Lag_ms,Causal_IIR_Lag_ms,ZeroPhase_Lag_ms
+I,II,52,-2,-2
+I,aVF,30,-25,-26
+II,V1,-50,2,2
+V1,V2,52,-2,-2

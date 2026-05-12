@@ -1,0 +1,10 @@
+1. The hardware ECG segment was loaded from ECG_FFT_Window_20260505_183753.mat.
+2. The segment was sampled at approximately 250.0 Hz and analyzed using FFT.
+3. The heart-rate peak was 1.000 Hz, equal to 60.0 BPM.
+4. The RR interval method gave 86.2 BPM, producing 30.40% difference.
+5. The low-frequency region below 0.5 Hz represents baseline wander due to movement and respiration.
+6. The 0.5-10 Hz region contains slower P-wave and T-wave components.
+7. The 1-40 Hz region contains the main ECG/QRS energy.
+8. The 50 Hz region was checked for mains interference.
+9. Any remaining high-frequency content may come from muscle noise or ADC/wiring noise.
+10. The close BPM agreement supports the quality of the detected ECG peaks.

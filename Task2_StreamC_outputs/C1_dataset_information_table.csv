@@ -1,0 +1,2 @@
+Dataset,Record_ID,Sampling_Rate_Hz,Duration_Used_s,Number_of_Leads_Used,Lead_Names,Age,Sex,Diagnosis,Source_URL
+PTB Diagnostic ECG Database,patient001/s0010_re,1000,10,12,"I, II, III, aVR, aVL, aVF, V1, V2, V3, V4, V5, V6",81,female,Myocardial infarction,https://physionet.org/content/ptbdb/1.0.0/patient001/
