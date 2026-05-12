@@ -1,0 +1,2 @@
+B.8 hardware motion-artifact processing was not run in this dataset-only execution.
+Run the script again and choose Yes at the B.8 prompt, or choose the realtime/hardware source at startup.

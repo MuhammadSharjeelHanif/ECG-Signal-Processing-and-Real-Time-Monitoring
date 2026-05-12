@@ -1,0 +1,2 @@
+Base_Source,Record_ID,Sampling_Rate_Hz,Duration_s,Artifact_Mode,Artifact_Regions,Spike_Times_s,Artifact_SNR_dB,Known_Artifact_Duration_s,Known_Artifact_Percent
+MIT-BIH Arrhythmia Database,100,360,30,Synthetic electrode-motion artifact added to clean MIT-BIH ECG,"5.0-5.5 s, 13.0-13.7 s, 22.0-22.6 s with increasing burst levels","9.5, 18.2, 25.3",6.51713306297597,2.46111111111111,8.2037037037037

@@ -1,0 +1,13 @@
+Stream B written analysis:
+1. Motion artifacts are non-stationary, so their amplitude and frequency content change with time.
+2. Fixed high-pass, notch, and low-pass filters are designed for stationary frequency bands and cannot fully remove sudden electrode-motion transients.
+3. When a large transient enters the ECG, fixed filters can leave residual spikes or ringing.
+4. The STFT shows artifact energy localized in time, unlike normal ECG energy which repeats with each beat.
+5. A short STFT window improves time localization but gives poorer frequency resolution.
+6. A long STFT window improves frequency resolution but smears sudden artifacts over time.
+7. Frame-based energy/variance detection was used to identify corrupted segments.
+8. Interpolation replaces corrupted samples using clean neighboring samples and works well for short artifacts.
+9. Median replacement suppresses spikes but may distort waveform details if the window is too large.
+10. The residual spike cleanup method first applies the Stream A filter and then replaces only detected transient leftovers.
+11. Based on the quantitative metric available in this run, the best method was: Hybrid median/mean + filter.
+12. For real-time use, frame detection plus interpolation is the simplest low-latency option; wavelet denoising is optional and toolbox-dependent.
